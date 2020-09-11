@@ -15,20 +15,24 @@ class MyApp extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: Container(),
-            ),
-            Container(
-              height: 65,
-              color: Colors.red,
-              width: double.infinity,
-              child: Center(
-                child: Text('check out'),
+        alignment: Alignment.center,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: Colors.black),
+          ),
+          width: 100,
+          height: 100,
+          padding: EdgeInsets.all(5),
+          child: Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.yellow,
+                borderRadius: BorderRadius.circular(10),
               ),
-            )
-          ],
+            ),
+          ),
         ),
       ),
     ));
